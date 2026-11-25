@@ -14,13 +14,12 @@ public class CotacaoController {
 
     private final CotacaoService cotacaoService;
 
-    public CotacaoController(CotacaoService cotacaoService){
+    public CotacaoController(CotacaoService cotacaoService) {
         this.cotacaoService = cotacaoService;
     }
 
-    
-    @GetMapping ("/{moeda}")
-    public CotacaoResponse buscarCotacao(@PathVariable String moeda){
+    @GetMapping("/{moeda}")
+    public CotacaoResponse buscarCotacao(@PathVariable String moeda) {
         return cotacaoService.buscarCotacao(moeda);
     }
 }
