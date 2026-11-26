@@ -16,7 +16,7 @@ public class AwesomeApiClient {
     public AwesomeApiClient() {
         this.restClient = RestClient.create(BASE_URL);
     }
-    
+
     public AwesomeApiCotacao buscarCotacao(String moeda) {
 
         // 1 montar par de moedas
